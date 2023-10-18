@@ -8,3 +8,201 @@
 :root {
     font-size: 16px;
 }
+
+main {
+    padding: 100px 0;
+    width: 89%;
+    margin: auto;
+}
+
+/*stili pagina*/
+ul {
+    list-style-type: none;
+}
+
+[target="colore-bianco"] {
+    color: white;
+}
+
+[target="firma"] {
+    font-size: 12px;
+    color: gray;
+}
+
+[target="prodotto"] {
+    font-weight: bold;
+}
+
+[target="prezzo"] {
+    color: orange;
+    font-size: 15px;
+}
+
+[target="prezzo-sconto"] {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+/*zona navigazione*/
+nav .row {
+    background-color: orange;
+    box-shadow: 0px 0px 10px 1px black;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    z-index: 500;
+}
+
+nav .col {
+    width: calc(60% / 3);
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.iniziale {
+    justify-content: flex-start;
+}
+
+.centrale { 
+    justify-content: center;
+}
+
+.fondo {
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav  a, footer a {
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    height: 30px;
+}
+
+/*zona contenuto principale*/
+.riga-1 .row {
+    display: flex;
+}
+
+.riga-1 .col {
+    display: flex;
+    position: relative;
+    width: calc((100% / 3) - 10px );
+    margin: 0 20px;
+    flex-direction: column;
+}
+
+.immagine-sopra {
+    height: 754.433px;
+    position: relative;
+    
+}
+
+.immagine-sotto {
+    height: 754.433px;
+    position: absolute;
+    display: none;
+}
+
+.col:hover .immagine-sotto {
+    display: block;
+}
+
+.col .tag-sconto, .tag-sost {
+    color: white;
+    padding: 4px 6px;
+    position: absolute;
+    z-index: 11;
+}
+
+main ul {
+    padding-bottom: 50px;
+}
+
+.col .tag-sconto {
+    background-color: orange;
+}
+
+.col .tag-sost {
+    background-color: green;
+}
+
+.col .cuore {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    z-index: 11;
+    font-size: 30px;
+}
+
+/*zona footer*/
+footer {
+    background-color: black;   
+}
+
+footer section {
+    display: flex;
+}
+
+.footer-sinistra, .footer-destra {
+    display: flex;
+    width: calc(75% / 2);
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    min-height: 100px;
+}
+
+.footer-sinistra ul {
+    display: flex;
+}
+
+footer li {
+    flex-direction: column;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.footer-destra {
+    justify-content: flex-end;
+}
+
+.footer-destra ul {
+    display: flex;
+}
+
+.footer-destra li {
+    font-size: 20px;
+}
+
+
+
+/*posizionamenti tag*/
+[target="sconto"] {
+    bottom: 50px;
+}
+
+[target="green"] {
+    bottom: 50px;
+    left: 50px;
+}
+
+[target="green-solo"] {
+    bottom: 50px;
+}
+
+[target="cuore"] {
+    top: 20px;
+    right: 0;
+}
